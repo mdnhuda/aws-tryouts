@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation project(':common')
+    implementation 'com.amazonaws:aws-java-sdk-kinesis:1.11.475'
+}
+
+application {
+    mainClassName = 'org.awstryouts.kinesis.producer.Producer'
+}
